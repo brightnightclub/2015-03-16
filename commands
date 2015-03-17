@@ -1,0 +1,6 @@
+move - > North, East, South, West
+pickup -> Item
+attack -> Monster
+drop -> Item
+run -> [move]
+dance!
