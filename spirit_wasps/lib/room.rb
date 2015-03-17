@@ -27,7 +27,7 @@ class Room
     the_clue = @clues.select do |clue|
       clue.known_as? clue_alias
     end
-    @clues.delete the_clue
+    # @clues.delete the_clue
   end
 
   def add_detective detective
