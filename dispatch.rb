@@ -8,7 +8,7 @@ class Dispatch
   end
   
   def execute command
-    verb, noun = command.split    
+    verb, noun = command.split.map(&:downcase)  
     
     case verb
     when "move"
