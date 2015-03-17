@@ -2,8 +2,8 @@ class Room
 
   attr_reader(:description, :doors)
 
-  def initialize attributes
-    @description = attributes[:description]
+  def initialize description
+    @description = description
     @doors = {}
     @clues = []
   end
