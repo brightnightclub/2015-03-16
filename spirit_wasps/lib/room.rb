@@ -1,12 +1,11 @@
 class Room
 
-  attr_reader(:description)
+  attr_reader(:description, :doors)
 
   def initialize attributes
     @description = attributes[:description]
     @doors = {}
     @clues = []
-    @detectives = []
   end
 
   def connect direction, room
@@ -30,12 +29,7 @@ class Room
     # @clues.delete the_clue
   end
 
-  def add_detective detective
-    @detectives.push detective
+  def has_door direction
+    @doors.has_key?(direction)
   end
-
-  def remove_detective detective
-    @detective.remove detective
-  end
-
 end
